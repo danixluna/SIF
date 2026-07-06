@@ -46,8 +46,25 @@ Además, muchas aplicaciones aún no soportan instituciones financieras reciente
 ---
 ## Visión
 
-Construir un sistema de gestión financiera potente que permita conocer qué sucede con el dinero del usuario, cómo afectarán las decisiones futuras y facilite la administración financiera sin convertirse en un ERP.
+Construir un sistema de gestión financiera potente que permita conocer el contexto completo del dinero del usuario, cómo afectarán las decisiones futuras y facilite la administración financiera sin convertirse en un ERP.
 ---
+
+## Usuarios Objetivo
+
+- Usuarios avanzados que manejan múltiples cuentas bancarias.
+- Usuarios con control de sus pagos de impuestos.
+- Que necesiten comprender el motivo de sus gastos y no solo saber en qué gastaron.
+- Deseen un presupuesto con mayor control.
+- Que busquen automatizar sus registros.
+
+---
+
+## Objetivos del Negocio
+
+- Los usuarios logran registrar en promedio un 90% de sus transacciones electrónicas.
+- El presupuesto requiere menos de 5 ajustes manuales una vez configurado.
+- La información disponible permite ahorros por parte de los usuarios. Se espera reducir gastos en al menos 10% durante los primeros meses.
+- Los usuarios pueden explicar el destino y motivo del 90% de sus gastos. 
 
 ## Riesgos del proyecto
 
