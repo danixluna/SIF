@@ -8,6 +8,7 @@
 - Programación de pagos.
 - Retenciones.
 - Deducciones.
+- Cálculo automático de impuestos y aportaciones. 
 
 ### Transacciones
 
@@ -30,8 +31,8 @@ o bien
 
 Administración de:
 
-- Bancos
-- Tarjetas
+- Cuentas Bancarias
+- Tarjetas de crédito y débito asociadas a sus cuentas bancarias (Puede haber tarjetas adicionales y afectar a la misma cuenta/Crédito).
 - Efectivo
 
 
