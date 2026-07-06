@@ -2,18 +2,19 @@
 
 ## MVP
 
-- Registro financiero.
-- Multicuentas.
-- Nómina.
-- Presupuesto.
-- Créditos.
-- Importación manual.
+Registrar correctamente las tranasacciones y flujo de dinero.
+
+- Cuentas
+- Transacciones
+- Manejo de créditos
+- Presupuesto
+- Nómina
 
 ---
 
 ## Fase 2
 
-Automatización
+Reducir trabajo manual
 
 - Importación bancaria.
 - Reglas automáticas.
@@ -24,7 +25,7 @@ Automatización
 
 ## Fase 3
 
-Inteligencia Artificial
+Convertir la información en conocimiento.
 
 - Asistente virtual.
 - Registro mediante lenguaje natural.
@@ -32,3 +33,4 @@ Inteligencia Artificial
 - Aprendizaje de hábitos.
 - Clasificación inteligente.
 - Sugerencias de presupuesto.
+- Lenguaje Natural.
