@@ -15,11 +15,8 @@ Centralizar toda la información financiera del usuario para facilitar la toma d
 ## Documentación
 
 - [Business Request](docs/BR.md)
-- [Visión](docs/Vision.md)
-- [Objetivos](docs/Objetivos.md)
-- [Alcance](docs/Alcance.md)
+- [Alcance](docs/scope.md)
 - [Roadmap](docs/Roadmap.md)
-- [Riesgos](docs/Riesgos.md)
 
 ## Próximas fases
 
