@@ -48,3 +48,22 @@ Además, muchas aplicaciones aún no soportan instituciones financieras reciente
 
 Construir un sistema de gestión financiera potente que permita conocer qué sucede con el dinero del usuario, cómo afectarán las decisiones futuras y facilite la administración financiera sin convertirse en un ERP.
 ---
+
+## Riesgos del proyecto
+
+- Abandono del proyecto.
+- Complejidad técnica.
+- Exceso de funcionalidades (Feature Creep).
+- Pérdida de simplicidad.
+- Dependencia de servicios externos.
+- Cambios regulatorios para integraciones bancarias.
+
+---
+
+## Estrategia de mitigación
+
+- Construcción incremental.
+- Desarrollo basado en MVP.
+- Priorización continua del backlog.
+- Validaciones frecuentes con usuarios.
+---
