@@ -1,0 +1,176 @@
+# Sistema de Control de Gastos Personales
+## Modelo de Dominio (Borrador v0.1)
+## Objetivo
+Definir las entidades principales y la información necesaria para representar el flujo de dinero de una persona, permitiendo conocer:
+- De dónde proviene el dinero.
+- En qué se gasta.
+- A dónde se transfiere.
+- Por qué ocurrió la transacción.
+- Si estaba planeada o no.
+- Cómo impacta las finanzas personales.
+---
+# Entidad: Transacción
+La transacción representa cualquier movimiento de dinero dentro del sistema.
+## Tipos de transacción
+- Ingreso
+- Gasto
+- Traspaso (Transferencia entre cuentas propias)
+Cada tipo determinará qué campos son obligatorios y cuáles pueden omitirse.
+## Información general
+- Identificador único
+- Fecha y hora de la transacción
+- Tipo de transacción
+- Concepto o descripción
+- Importe
+- Estatus
+## Origen y destino
+Toda transacción deberá tener un origen.
+### Cuenta origen
+Puede ser:
+- Cuenta bancaria
+- Tarjeta
+- Efectivo
+- Cuenta puente
+### Destino
+**Gasto**
+Destino = comercio, establecimiento o beneficiario.
+**Ingreso**
+Origen = persona o entidad que realiza el pago.
+**Traspaso**
+Debe existir:
+- Cuenta origen
+- Cuenta destino
+En este caso no se utilizarán categorías ni motivos.
+## Clasificación
+- Categoría
+- Subcategoría
+Configurables por el usuario.
+## Motivo
+Campo configurable.
+Ejemplos para gastos:
+- Presupuestado
+- Emergencia
+- Compra impulsiva
+- Se olvidó llevar comida
+- Se olvidó la tarjeta
+- Reposición
+- Gasto extraordinario
+Ejemplos para ingresos:
+- Nómina
+- Venta
+- Servicio
+- Reembolso
+- Préstamo
+- Regalo
+## Presupuesto
+Indicador:
+- ¿Estaba presupuestado?
+## Información fiscal
+Indicador:
+- ¿Está facturado?
+Adjuntos:
+- XML
+- PDF
+- CFDI
+- Recibo de nómina
+## Adjuntos
+- Ticket
+- Factura
+- Fotografía
+- Comprobante bancario
+## Medio utilizado
+- Cuenta bancaria
+- Tarjeta
+- Efectivo
+---
+# Entidad: Usuario
+## Información
+- Identificador
+- Nombre de usuario
+- Nombre para mostrar
+- Nombre legal (opcional)
+- RFC (opcional)
+- Código Postal (opcional)
+---
+# Catálogo: Instituciones Financieras
+Información:
+- Código SAT
+- Nombre oficial
+- Nombre comercial
+- Estatus
+---
+# Entidad: Cuenta
+## Cuentas preconfiguradas
+- Efectivo
+- Cuenta puente de nómina
+## Información
+- Identificador
+- Nombre
+- Banco
+- Tipo
+- Número de cuenta
+- CLABE
+- Titular
+- ¿Es propia?
+- Titular (si no es propia)
+- Saldo inicial
+- Estado
+Tipos:
+- Cheques
+- Débito
+- Crédito
+- Ahorro
+- Inversión
+- Efectivo
+- Cuenta puente
+---
+# Entidad: Tarjeta
+## Información
+- Identificador
+- Cuenta asociada
+- Banco emisor
+- Tipo
+- Terminación
+- Número completo (opcional)
+- Usuario asignado
+- Física / Virtual
+- Estado
+---
+# Catálogo: Categorías
+Configurables.
+---
+# Catálogo: Motivos
+Configurables.
+---
+# Reglas de negocio
+- Toda transacción debe tener origen.
+- Los traspasos requieren origen y destino.
+- Los traspasos no utilizan categoría ni motivo.
+- Los ingresos y gastos sí utilizan categorías.
+- Los motivos son configurables.
+- Las transacciones pueden tener múltiples adjuntos.
+- Las transacciones pueden marcarse como presupuestadas.
+- Las transacciones pueden indicar si cuentan con comprobante fiscal.
+---
+# Observaciones
+- Separar dominio financiero del fiscal.
+- Mantener cuentas y tarjetas como entidades distintas.
+- Catálogos configurables.
+- Modelo orientado al análisis financiero.
+---
+# Posibles entidades futuras
+- Presupuestos
+- Comercios
+- Personas
+- Metas de ahorro
+- Deudas
+- Créditos
+- Inversiones
+- Activos
+- Pasivos
+- Suscripciones
+- Recordatorios
+- Reglas automáticas
+- Conciliación bancaria
+- Importación de estados de cuenta
+- Dashboards
